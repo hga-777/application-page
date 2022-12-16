@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container"><!--div tag ke help se html ko css se link krna aashan hota h-->
       <div class="apply_box">
         <h1>
           Job Application
-          <span class="title_small">(Web)</span>
+          <span class="title_small">(Web)</span> <!--span hoga same line me laane ke liye-->
         </h1>
-        <form action="">
+        <form action=""> <!--action me jb javascript add karenge tb kuch dalna rehta h-->
           <div class="form_container">
             <div class="form_control">
-              <label for="first_name"> First Name </label>
-              <input
-                id="first_name"
+              <label for="first_name"> First Name </label> <!--label ke for me same id as input dalne pr lable ko click krne pr input pr cursor chala jaega-->
+              <input 
+                id="first_name" 
                 name="first_name"
-                placeholder="Enter First Name..."
+                placeholder="Enter First Name..."  
               />
             </div>
-            <div class="form_control">
+            <div class="form_control"> <!--bydeafult input type text rehta h-->
               <label for="last_name"> Last Name </label>
               <input
                 id="last_name"
@@ -32,7 +32,7 @@
                 placeholder="Enter Last Name..."
               />
             </div>
-            <div class="form_control">
+            <div class="form_control"> <!--yaha pr input type email add kiya, aur particular type ke liye alg alg div bna r h bt same class se-->
               <label for="email"> Email </label>
               <input
                 type="email"
@@ -41,10 +41,11 @@
                 placeholder="Enter Email..."
               />
             </div>
-            <div class="form_control">
+            <div class="form_control"><!--iske liye select use kiye h input use n kiye h jo ki drop down laega-->
               <label for="job_role"> Job Role </label>
               <select id="job_role" name="job_role">
-                <option value="">Select Job Role</option>
+                <option value="">Select Job Role</option> <!--yaha pr option value me null rakhe h jisse us option
+                   ko select kr pr kuch v n hoga-->
                 <option value="frontend">Frontend Developer</option>
                 <option value="backend">Backend Developer</option>
                 <option value="full_stack">Full Stack Developer</option>
@@ -52,7 +53,9 @@
               </select>
             </div>
             <div class="textarea_control">
-              <label for="address"> Address </label>
+              <label for="address"> Address </label> <!--iske liye text area use kiye h n ki normal input 
+              jiske wagah se text area ko hmlog change kr sakte h aur agr text box se zyada ho jaata h
+            toh scrol down me ho jaata h-->
               <textarea
                 id="address"
                 name="address"
@@ -76,14 +79,15 @@
             </div>
             <div class="form_control">
               <label for="date"> Date </label>
-              <input value="2022-01-10" type="date" id="date" name="date" />
+              <input value="2022-01-10" type="date" id="date" name="date" /><!--yaha pr value add kiye 
+              jisse ki waha pr default value reh gya 2022-01-10 nhi toh dd/mm//yy is trh rehta-->
             </div>
             <div class="form_control">
               <label for="upload"> Upload Your CV </label>
-              <input type="file" id="upload" name="upload" />
+              <input type="file" id="upload" name="upload" /> <!--type file h-->
             </div>
           </div>
-          <div class="button_container">
+          <div class="button_container"><!--button ke liye div banaya jo ki contianer se bahir hoga-->
             <button type="submit">Apply Now</button>
           </div>
         </form>

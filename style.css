@@ -1,4 +1,4 @@
-* {
+* {  /* isse default styling jo browser me rehta h woh reset ho jaata h*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,8 +18,9 @@ body {
   background-color: white;
   margin: 0 auto;
   margin-top: 50px;
-  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
-  border-radius: 10px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1); /*yeh div ka attribute h jisme hmlog 
+  dibbe ka shadow de sakte h x,y,z direction me aur saath me color v*/
+  border-radius: 10px;/*border radius jitta jyada utta moora hua corner , agr 10px 20px denge toh diagonally hoga*/
 }
 
 .title_small {
